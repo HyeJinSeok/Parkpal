@@ -1,37 +1,42 @@
-# 🛤 Parkpal - JDBC & MySQL Based Park Database
+# JDBC & MySQL based Park Database - 🛤Parkpal
 
+<br>
 
-**반가워요! 당신의 즐거운 산책 메이트 *Parkpal* 이에요🍃** <br>
+### 반가워요! 당신의 즐거운 산책 메이트 *Parkpal* 이에요🍃 <br>
+
 JDBC와 MySQL을 활용하여 서울시 공원 정보를 효율적으로 검색할 수 있는 데이터베이스 시스템을 구현했습니다. <br> 
-사용자들이 손쉽게 원하는 정보를 찾을 수 있도록 **특정 키워드**를 통한 공원 이름 검색 기능을 제공합니다.
 
-<br/>
-<br/>
+사용자들이 손쉽게 원하는 정보를 찾을 수 있도록 특정 키워드를 통한 공원 이름 검색 기능을 제공합니다.
+
+<br><br>
 
 ## ◈ Contributor
+
 
 | ![박지혜](https://avatars.githubusercontent.com/u/153366521?v=4) | ![박진현](https://avatars.githubusercontent.com/u/193213283?s=400&u=a2ff434fa5c27a5567884503751aafc69e9167fe&v=4) | ![서소원](https://avatars.githubusercontent.com/u/79669001?v=4)| ![석혜진](https://avatars.githubusercontent.com/u/127267532?v=4) |
 |:--------------------:|:--------------------:|:--------------------:|:--------------------:|
 | [박지혜](https://github.com/parkjhhh) | [박진현](https://github.com/jinhyunpark929) | [서소원](https://github.com/PleaseErwin) | [석혜진](https://github.com/HyeJinSeok) |
 
-<br>
-
+<br><br>
 
 ## ◈ Reference
 
-✳️ **서울시 주요 공원현황 :** <https://data.seoul.go.kr/dataList/OA-394/S/1/datasetView.do>
+• **서울시 주요 공원현황 :** <https://data.seoul.go.kr/dataList/OA-394/S/1/datasetView.do>
 
 
 − 2023년 11월 서울특별시의회 자료에 따르면 총 2,959개의 공원이 존재함 <br>
+
 − 이 중 서울시 직영 공원과 자치구별 주요 공원 130개를 대상으로 한 ‘서울열린데이터 광장’의 데이터를 활용함 <br>
+
 − 전처리 과정에서 주요 식물 관련 정보가 없는 공원은 제외하고, 최종적으로 **88개의 공원 데이터**를 사용함
 
-<br>
+<br><br>
 
 ## ◈ Project Structure
 
 ```
 📁 Parkpal
+|
 └─ src
    ├─ Controller                          // 컨트롤러 계층
    │  └─ parkController
@@ -48,19 +53,19 @@ JDBC와 MySQL을 활용하여 서울시 공원 정보를 효율적으로 검색�
    └─ Park.View                           // 뷰 계층 (출력/화면 처리)
       ├─ parkStartview
       └─ parkEndview
-
+|
 └─ README.md                              // 프로젝트 설명 문서
 |
 └─ images                                 // readme 이미지
 ```
-<br>
+<br><br>
 
 ## ◈ Skill Stack
 
 <img src="https://img.shields.io/badge/java-FF0000?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"> <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"> <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-<br>
-<br>
 
+<br>
+<br>
 
 ## ◈ Main Features
 
@@ -68,68 +73,71 @@ JDBC와 MySQL을 활용하여 서울시 공원 정보를 효율적으로 검색�
 
 <br>
 
-**1. 전체 공원 정보 검색**  
-
+### 1. 전체 공원 정보 검색 
+---
 
 ![Parkpal1](https://github.com/user-attachments/assets/1993c690-0dab-4537-b075-ab4cff87c833)  
 
 <br>
 
-**2. 특정 키워드가 포함된 공원 검색**  
-
+### 2. 특정 키워드가 포함된 공원 검색  
+---
 
 ![Parkpal2](https://github.com/user-attachments/assets/ab1bce79-395a-452c-86d1-6ba95891eaf1)
 
 <br>
 
-**3. 리스트 내 신규 공원 추가**  
-
+### 3. 리스트 내 신규 공원 추가
+---
 
 ![Parkpal3_1](https://github.com/user-attachments/assets/917d2889-ab63-412a-b101-99a1c6b614da)
 
 
-**3-1. 정상적으로 추가 완료**
+### 3-1. 정상적으로 추가 완료
+---
 
 ![Parkpal3_2](https://github.com/user-attachments/assets/a8812e8b-e662-4668-a734-75cbf8338860)
 
 <br>
 
-**4. 특정 지역의 주요 식물 분포 변경**
-
+### 4. 특정 지역의 주요 식물 분포 변경
+---
 
 ![Parkpal4](https://github.com/user-attachments/assets/7c0a1482-d8b4-40a3-b063-68db760405a7)
 
 <br>
 
-**5. 공원명 내 특정 키워드를 포함한 공원 정보 삭제**
-
+### 5. 공원명 내 특정 키워드를 포함한 공원 정보 삭제
+---
 
 ![Parkpal5_1](https://github.com/user-attachments/assets/f22f0b42-dfb3-44a7-a24d-f13af3af6e26)
 
-**5-1. 정상적으로 삭제 완료**
+<br>
 
+### 5-1. 정상적으로 삭제 완료
+---
 
 ![Parkpal5_2](https://github.com/user-attachments/assets/bdd2bc4e-33ca-4158-a9a5-440092d1c68c)
 
-<br>
+<br><br>
 
----
 
 ## ◈ Trouble Shooting
 
+<br>
 
-📌CSV 형식 데이터의 DBeaver 테이블 변환 실패
+### 🚩 CSV 형식 데이터의 DBeaver 테이블 변환 실패
 
 ```
 error code: Can't init data transfer, Can't create or update target table
 ```
 
 
-💡해결책: CSV 파일 **스키마**에 불필요하게 들어간 **공백을 제거**함으로써 테이블 변환에 성공함
+💡: CSV 파일 **스키마**에 불필요하게 들어간 **공백을 제거**함으로써 테이블 변환에 성공함
 
-<br>
+<br><br>
 
-📌데이터베이스 연결 중 Connection Reset 예외 발생
+### 🚩 데이터베이스 연결 중 Connection Reset 예외 발생
 
 ```
 java.sql.SQLRecoverableException: IO 오류: Connection reset, connect lapse 1 ms., Authentication lapse 0 ms.
@@ -137,8 +145,9 @@ java.sql.SQLRecoverableException: IO 오류: Connection reset, connect lapse 1 m
     at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:688)
     at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:39)
 ```
+<br>
 
-💡해결책: DB 서버를 새로운 환경으로 이관하는 과정에서 DB 접속 정보가 변경된 상태였기에, <br> dbinfo.properties에 저장된 **DB 접속 정보를 수정**한 뒤, 정상적으로 연결할 수 있었음.
+💡: DB 서버를 새로운 환경으로 이관하는 과정에서 DB 접속 정보가 변경된 상태였기에, <br> dbinfo.properties에 저장된 **DB 접속 정보를 수정**한 뒤, 정상적으로 연결할 수 있었음.
 
 
 <img width="365" alt="cap1" src="https://github.com/user-attachments/assets/c9d1ac36-d4f8-47a1-bd80-d1d1e41942cb" />
@@ -146,10 +155,10 @@ java.sql.SQLRecoverableException: IO 오류: Connection reset, connect lapse 1 m
 <br><br>
 
 
-📌코드 ↔ DB 간의 연결 오류 발생
+### 🚩 코드 ↔ DB 간의 연결 오류 발생
 
 ```
-// 오류 원인을 탐색하기 위한 💡콘솔 출력문 추가
+// 오류 원인을 탐색하기 위한 **콘솔 출력문** 추가
 // DBUtil.java
 
 static {
@@ -176,24 +185,26 @@ static {
     }
 }
 ```
-<br>
 
 📌출력된 오류 코드
 ```
 System.out.println("DB 설정 파일 로드 중 오류 발생: " + e.getMessage());
 ```
 
+<br>
 
-💡해결책: JDBC 드라이버가 정상적으로 로드되지 않는 문제이므로, <br> Class.forName(p.getProperty("jdbc.driverClassName")); <br> 대신에 **Class.forName(p.getProperty("jdbc.driver"));로 수정**함
+💡: JDBC 드라이버가 정상적으로 로드되지 않는 문제이므로, <br> Class.forName(p.getProperty("jdbc.driverClassName")); <br> 대신에 **Class.forName(p.getProperty("jdbc.driver"));로 수정**함
 
 <br>
 
 
-📌로컬 브랜치를 main에 병합하고 Pull하는 과정에서 충돌 오류 발생
+### 🚩 로컬 브랜치를 main에 병합하고 Pull하는 과정에서 충돌 오류 발생
 
 ![cap2](https://github.com/user-attachments/assets/d27c8779-8090-437a-bfb9-c81c4fd1e628)
 
-💡해결책: 충돌 파일들을 수동으로 수정하여 강제로 병합함
+<br>
+
+💡: 충돌 파일들을 수동으로 수정하여 강제로 병합함
 
 ```
 git add src/controller/Controller.java
@@ -202,11 +213,13 @@ git add src/park/view/StartView.java
 
 <br>
 
-📌MySQL과의 연결 문제로 Communication Link Failure 오류 발생
+### 🚩MySQL과의 연결 문제로 Communication Link Failure 오류 발생
 
 ![cap3](https://github.com/user-attachments/assets/aacb6750-13a2-412b-8d85-b1a71699271f)
 
-💡해결책: Oracle VirtualBox 서버 실행 및 MobaXterm 로그인을 통해 mysql에 접속함
+<br>
+
+💡: Oracle VirtualBox 서버 실행 및 MobaXterm 로그인을 통해 mysql에 접속함
 
 
 ![cap4](https://github.com/user-attachments/assets/029b1b3e-051d-4423-bb6c-9d49ff3356fa)
