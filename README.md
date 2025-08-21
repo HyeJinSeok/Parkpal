@@ -8,6 +8,8 @@ JDBC와 MySQL을 활용하여 서울시 공원 정보를 효율적으로 검색�
 
 사용자들이 손쉽게 원하는 정보를 찾을 수 있도록 특정 키워드를 통한 공원 이름 검색 기능을 제공합니다.
 
+![Parkpal_MainFeature_Final](https://github.com/user-attachments/assets/c0c769da-13db-484f-be10-92b9babe9fd6)
+
 <br><br>
 
 ## ◈ Worked on
@@ -93,11 +95,12 @@ JDBC와 MySQL을 활용하여 서울시 공원 정보를 효율적으로 검색�
 
 <br>
 
-![Parkpal_MainFeature_Final](https://github.com/user-attachments/assets/c0c769da-13db-484f-be10-92b9babe9fd6)
-
-<br>
-
 ### ① 전체 공원 정보 검색 
+
+
+− 데이터베이스에 저장된 공원들의 주요 정보가 출력됨 <br>
+
+− 개원일 / 주요 식물 / 위치(오시는 길) / 지역 / 전화번호 / 주요 시설
 
 
 ![Parkpal1](https://github.com/user-attachments/assets/1993c690-0dab-4537-b075-ab4cff87c833)  
@@ -107,6 +110,11 @@ JDBC와 MySQL을 활용하여 서울시 공원 정보를 효율적으로 검색�
 ### ② 특정 키워드가 포함된 공원 검색  
 
 
+− ``공원 검색어 입력 >``에 입력한 키워드 (예: 근린)가 포함된 공원 이름만 조회됨 <br>
+
+− 키워드 기반 필터링을 통해 원하는 공원을 빠르게 찾을 수 있음
+
+
 ![Parkpal2](https://github.com/user-attachments/assets/ab1bce79-395a-452c-86d1-6ba95891eaf1)
 
 <br>
@@ -114,10 +122,15 @@ JDBC와 MySQL을 활용하여 서울시 공원 정보를 효율적으로 검색�
 ### ③ 리스트 내 신규 공원 추가
 
 
+− 사용자가 3번 메뉴를 선택하면 새로운 공원을 등록할 수 있음 <br>
+
+− 입력 스키마: 연번 / 공원명 / 개원일 / 주요 식물 / 오시는 길 / 지역 / 전화번호 / 주요 시설
+
+
 ![Parkpal3_1](https://github.com/user-attachments/assets/917d2889-ab63-412a-b101-99a1c6b614da)
 
 
-### ③ 정상적으로 추가 완료
+− 입력 완료 후 DB에 새로운 공원 데이터가 추가됨
 
 
 ![Parkpal3_2](https://github.com/user-attachments/assets/a8812e8b-e662-4668-a734-75cbf8338860)
@@ -127,6 +140,11 @@ JDBC와 MySQL을 활용하여 서울시 공원 정보를 효율적으로 검색�
 ### ④ 특정 지역의 주요 식물 분포 변경
 
 
+− ``정보를 수정할 주요식물/지역을 순서대로 입력 >`` 예: 무궁화 / 서대문구 <br>
+
+− 해당 지역의 공원 데이터에서 주요 식물 정보가 업데이트됨
+
+
 ![Parkpal4](https://github.com/user-attachments/assets/7c0a1482-d8b4-40a3-b063-68db760405a7)
 
 <br>
@@ -134,11 +152,15 @@ JDBC와 MySQL을 활용하여 서울시 공원 정보를 효율적으로 검색�
 ### ⑤ 공원명 내 특정 키워드를 포함한 공원 정보 삭제
 
 
+− 메뉴 5번 선택 후 삭제할 공원 이름(또는 키워드) 입력 <br>
+
+− 해당 키워드를 포함한 공원 정보가 삭제됨
+
+
 ![Parkpal5_1](https://github.com/user-attachments/assets/f22f0b42-dfb3-44a7-a24d-f13af3af6e26)
 
-<br>
 
-### ⑤ 정상적으로 삭제 완료
+− 이후 검색 시 결과 없음으로 확인
 
 
 ![Parkpal5_2](https://github.com/user-attachments/assets/bdd2bc4e-33ca-4158-a9a5-440092d1c68c)
@@ -163,7 +185,7 @@ error code: Can't init data transfer, Can't create or update target table
 🔴 데이터베이스 연결 중 Connection Reset 예외 발생
 
 ```
-java.sql.SQLRecoverableException: IO 오류: Connection reset, connect lapse 1 ms., Authentication lapse 0 ms.
+java.sql.SQLRecoverableException: IO 오류: Connection reset, connect lapse 1 ms.
     at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:794)
     at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:688)
     at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:39)
@@ -210,7 +232,7 @@ static {
 System.out.println("DB 설정 파일 로드 중 오류 발생: " + e.getMessage());
 ```
 
-🟢 Class.forName(p.getProperty("jdbc.driverClassName")) 대신에 Class.forName(p.getProperty(**"jdbc.driver"**))로 수정함
+🟢 Class.forName(p.getProperty("jdbc.driverClassName")) 대신에 Class.forName(p.getProperty(**"jdbc.driver"**))로 수정
 
 <br><br>
 
